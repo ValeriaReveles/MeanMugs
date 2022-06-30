@@ -10,8 +10,11 @@ td, th {
 h1{
     font-family: 'Stick No Bills', sans-serif;
     position: fixed;
+    width:100%;
+    text-align: center;
+
 
 }
 .container-body{
-    margin-top: 50px;
+    margin-top:50px;
 }
