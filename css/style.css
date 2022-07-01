@@ -18,7 +18,7 @@ body {
 .intro {
     box-sizing: border-box;
     min-height: 100vh;
-    padding: 53vw 0 5vw;
+    padding: 40vw 0 5vw;
     position: relative;
     transform-style: inherit;
     width: 100vw;
