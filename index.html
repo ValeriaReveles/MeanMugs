@@ -12,24 +12,54 @@
     <h1>The Roach Coach Cafe</h1>
     <p>BEST ROAST IN THE CITY. PLAIN AND SIMPLE.</p>
 </div>
-
+<!--Our selection form goes here-->
 <div class="content">
     <div class="container">
         <div class="row">
-            <form>
-                <label for="roast-selection"></label>
-                <select id="roast-selection">
-                    <option>light</option>
-                    <option>medium</option>
-                    <option>dark</option>
-                </select>
-                <input id="submit" type="submit" />
-            </form>
+            <div class="col-6"></div>
+                <form>
+                    <label for="roast-selection"></label>
+                    <select id="roast-selection">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <input id="submit" type="submit" />
+                    <hr>
+                </form>
+                <div>
+                <h2>Recommend a Coffee</h2>
+                    <form>
+                        <div>
+                            <label for="roast-selection"></label>
+                            <select id="roast-selection1">
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                            <input id="submit-new" type="submit" />
+                        </div>
+                            <div>
+                            <label for="roast-selection"></label>
+                            </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                        </div>
+                    </form>
+                </div>
         </div>
-        <div class="list" id="coffees">
-            <div class="row">
-                <h3>NAME</h3>
-                <P>ROAST</P>
+        <!--Our fancy JS stuff is working here-->
+        <div class="row">
+            <div class="col-6">
+                <div class="list" id="coffees">
+
+                    <h3>NAME</h3>
+                    <P>ROAST</P>
+
+                </div>
             </div>
         </div>
     </div>

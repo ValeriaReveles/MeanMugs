@@ -15,6 +15,9 @@ body {
     text-align: center;
     font-family: 'Stick No Bills', sans-serif;
 }
+hr {
+    width: 40%;
+}
 .intro {
     box-sizing: border-box;
     min-height: 100vh;
