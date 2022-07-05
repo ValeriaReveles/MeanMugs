@@ -13,24 +13,31 @@ function renderCoffee(coffee) {
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
-        html += renderCoffee(coffees[i]);
+        html += renderCoffee(coffees[i]); /*trying a sort here but didn't work*/
     }
     return html;
 }
-
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
+function filterCoffees() {
     var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
+    var filteredCoffees = []; /* tried a sort here but didnt work*/
+    // do you match the roast selection, and the pattern youre typing in?
+
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
     });
-    divList.innerHTML = renderCoffees(filteredCoffees);
+    return filteredCoffees
+}
+function updateCoffees(e) {
+    e.preventDefault(); // don't submit the form, we just want to update the data
+    var filteredCoffees = filterCoffees()
+    divListSorted.innerHTML = renderCoffees(filteredCoffees); /*Tried an array sort here too*/
 }
 
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -46,12 +53,32 @@ var coffees = [
     {id: 12, name: 'Viennese', roast: 'dark'},
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
-];
 
-var divList = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var roastSelection = document.querySelector('#roast-selection');
+]; /*Tried a sort here but didnt work*/
 
-divList.innerHTML = renderCoffees(coffees);
+
+var divListSorted = document.getElementById('coffees'); /* Tried a sort here too*/
+var submitButton = document.getElementById('submit');
+var roastSelection = document.getElementById('roast-selection');
+var roastAdd = document.getElementById('roast-selection1');
+
+divListSorted.innerHTML = renderCoffees(coffees);/*tried a sort here, annnnnd it didnt work*/
 
 submitButton.addEventListener('click', updateCoffees);
+
+roastSelection.addEventListener('change', updateCoffees);
+
+roastAdd.addEventListener('keyup', filterCoffees);
+
+// How to sort objects in ascending order:
+function ascending (a, b) {
+    if (a.name > b.name) {
+        return -1;
+    }
+    if (a.name < b.name) {
+        return 1;
+    }
+    return 0;
+}
+
+coffees.sort(ascending);
