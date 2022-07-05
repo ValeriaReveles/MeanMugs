@@ -61,12 +61,15 @@ var divListSorted = document.getElementById('coffees'); /* Tried a sort here too
 var submitButton = document.getElementById('submit');
 var roastSelection = document.getElementById('roast-selection');
 var roastAdd = document.getElementById('roast-selection1');
+var roastInput = document.getElementById('submit-new')
 
 divListSorted.innerHTML = renderCoffees(coffees);/*tried a sort here, annnnnd it didnt work*/
 
 submitButton.addEventListener('click', updateCoffees);
 
 roastSelection.addEventListener('change', updateCoffees);
+
+roastInput.addEventListener('input', filterCoffees);
 
 roastAdd.addEventListener('keyup', filterCoffees);
 
