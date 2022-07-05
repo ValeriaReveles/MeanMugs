@@ -60,8 +60,8 @@ var coffees = [
 var divListSorted = document.getElementById('coffees'); /* Tried a sort here too*/
 var submitButton = document.getElementById('submit');
 var roastSelection = document.getElementById('roast-selection');
-var roastAdd = document.getElementById('roast-selection1');
-var roastInput = document.getElementById('submit-new')
+var roastAdd = document.getElementById('roast-selection-pick');
+var roastInput = document.getElementById('pick-new')
 
 divListSorted.innerHTML = renderCoffees(coffees);/*tried a sort here, annnnnd it didnt work*/
 
