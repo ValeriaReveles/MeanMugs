@@ -18,55 +18,60 @@
         <p>BEST ROAST IN THE CITY</p>
     </div>
     <footer class="header-footer">
-        <h2>SCROLL DOWN</h2>
+        <h2>SCROLL DOWN FOR MORE</h2>
     </footer>
 </header>
 <!--Our selection form goes here-->
 <div class="content">
     <div class="container">
+        <h2 class="text-center">PICK YOUR POISON:</h2>
         <div class="row">
             <div class="col-6">
-                <h2>OUR COFFEE</h2>
+                <h2>ROAST LEVELS</h2>
                 <form>
                     <label for="roast-selection"></label>
                     <select id="roast-selection">
                         <option value="all">All</option>
-                        <option value="light">Light</option>
-                        <option value="medium">Medium</option>
-                        <option value="dark">Dark</option>
+                        <option value="light">Light and Heavenly</option>
+                        <option value="medium">Medium and Plain</option>
+                        <option value="dark">Dark and Crispy</option>
                     </select>
-                        <label for="validationServer01" class="form-label">SELECT ROAST</label>
+                        <label for="validationServer01" class="form-label">ROAST VIBES</label>
                         <input type="text"  id="validationServer01" placeholder="Coffee name" required>
-                    <button id="submit">Finish</button>
+                    <button id="submit">FIND</button>
                 </form>
             </div>
 
             <!--New coffee input goes here-->
 
             <div class="col-6 divList">
-                <h2>CREATE YOUR OWN!</h2>
+                <h2>MAKE YOUR OWN</h2>
                 <form>
                     <label for="roast-selection-new"></label>
                     <select id="roast-selection-new">
                         <option value="all">All</option>
-                        <option value="light">Light</option>
-                        <option value="medium">Medium</option>
-                        <option value="dark">Dark</option>
+                        <option value="light">Light and Heavenly</option>
+                        <option value="medium">Medium and Plain</option>
+                        <option value="dark">Dark and Crispy</option>
                     </select>
-                    <label for="validationServer01" class="form-label">SELECT ROAST</label>
+                    <label for="validationServer01" class="form-label">ROAST VIBES</label>
                     <input type="text" id="validationServer02" placeholder="New Coffee name" required>
-                    <button id="submit-new">Add new coffee</button>
+                    <button id="submit-new">Add Creation/Abomination</button>
                 </form>
             </div>
         </div>
-    </div><br>
-    <h3>Selections:</h3>
-
+    </div>
+    <br>
+    <br>
+    <div class="search-header text-center"><h3>MEAN-MUG SPECIALTIES:</h3></div>
+    <hr>
+    <div class="search-container">
         <div class="list" id="coffees">
             <!--This is where the fancy JS is happening-->
             <h3>NAME</h3>
             <P>ROAST</P>
         </div>
+    </div>
 </div>
 
 <script src="js/main.js"></script>
