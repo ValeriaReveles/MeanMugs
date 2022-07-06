@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Coffee Sarge</title>
+    <title>Mean Mug Cafe</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!--Google fonts link-->
     <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,28 +25,50 @@
 <div class="content">
     <div class="container">
         <div class="row">
-            <div class="col-6"></div>
-            <h2>Our Coffee</h2>
-            <form>
-                <label for="roast-selection"></label>
-                <select id="roast-selection">
-                    <option value="all">All</option>
-                    <option value="light">Light</option>
-                    <option value="medium">Medium</option>
-                    <option value="dark">Dark</option>
-                </select>
-                <input id="submit" type="submit"/>
-            </form>
-            <h2>CREATE YOUR OWN!</h2>
-            <div class="divList">
-                <div class="list" id="coffees">
-                    <h3>NAME</h3>
-                    <P>ROAST</P>
-                </div>
+            <div class="col-6">
+                <h2>OUR COFFEE</h2>
+                <form>
+                    <label for="roast-selection"></label>
+                    <select id="roast-selection">
+                        <option value="all">All</option>
+                        <option value="light">Light</option>
+                        <option value="medium">Medium</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                        <label for="validationServer01" class="form-label">SELECT ROAST</label>
+                        <input type="text"  id="validationServer01" placeholder="Coffee name" required>
+                    <button id="submit">Finish</button>
+                </form>
+            </div>
+
+            <!--New coffee input goes here-->
+
+            <div class="col-6 divList">
+                <h2>CREATE YOUR OWN!</h2>
+                <form>
+                    <label for="roast-selection-new"></label>
+                    <select id="roast-selection-new">
+                        <option value="all">All</option>
+                        <option value="light">Light</option>
+                        <option value="medium">Medium</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <label for="validationServer01" class="form-label">SELECT ROAST</label>
+                    <input type="text" id="validationServer02" placeholder="New Coffee name" required>
+                    <button id="submit-new">Add new coffee</button>
+                </form>
             </div>
         </div>
-    </div>
+    </div><br>
+    <h3>Selections:</h3>
+
+        <div class="list" id="coffees">
+            <!--This is where the fancy JS is happening-->
+            <h3>NAME</h3>
+            <P>ROAST</P>
+        </div>
 </div>
+
 <script src="js/main.js"></script>
 </body>
 </html>
