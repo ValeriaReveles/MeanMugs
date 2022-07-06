@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="parallax col-sm-12">
+<header class="parallax">
     <div>
         <h1>MEAN-MUG CAFE</h1>
     </div>
@@ -28,49 +28,58 @@
                 <form>
                     <label for="roast-selection"></label>
                     <select id="roast-selection">
-                        <option>light</option>
-                        <option>medium</option>
-                        <option>dark</option>
+                        <option value="all">All</option>
+                        <option value="light">Light</option>
+                        <option value="medium">Medium</option>
+                        <option value="dark">Dark</option>
                     </select>
-                    <label for="submit">Select a roast</label><br><br>
-                    <input type="text" id="submit" name="submit" placeholder="Choose from our list"><br>
+                    <input type="text" id="search-name" name="search-name" placeholder="Browse By Name">
+                    <input id="submit" type="submit"/>
 
-                    <label for="submit">click to submit
-                        <button>Finish</button>
-                    </label>
-
-                    <hr>
                 </form>
+<!--                <form>-->
+<!--                    <label for="roast-selection"></label>-->
+<!--                    <select id="roast-selection">-->
+<!--                        <option>light</option>-->
+<!--                        <option>medium</option>-->
+<!--                        <option>dark</option>-->
+<!--                    </select>-->
+<!--                    <label for="submit">Select a roast</label><br><br>-->
+
+
+<!--                    <input type="text" id="submit" name="submit" placeholder="Choose from our list"><br>-->
+
+<!--&lt;!&ndash;                    <label for="submit">click to submit&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button>Finish</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </label>&ndash;&gt;-->
+<!--                </form>-->
                 <div>
                 <h2>Recommend a Coffee</h2>
-                    <form>
-                        <div>
-                            <label for="roast-selection-pick">First select a roast</label>
-                            <select id="roast-selection-pick">
-                                <option>LIGHT</option>
-                                <option>MEDIUM</option>
-                                <option>LARGE</option>
-                            </select><br>
-                            <label for="pick-new"></label><br>
-                            <input type="text" id="pick-new" name="pick-new" placeholder="Add a new name to our list"><br>
+<!--                    <form>-->
+<!--                        <div>-->
+<!--                            <label for="roast-selection-pick">First select a roast</label>-->
+<!--                            <select id="roast-selection-pick">-->
+<!--                                <option>LIGHT</option>-->
+<!--                                <option>MEDIUM</option>-->
+<!--                                <option>LARGE</option>-->
+<!--                            </select><br>-->
+<!--                            <label for="pick-new"></label><br>-->
+<!--                            <input type="text" id="pick-new" name="pick-new" placeholder="Add a new name to our list"><br>-->
 
-                            <label for="pick-new1">click to add</label>
-                        <button id="pick-new1" >Add it to the list!</button>
-                        </div>
-                            <div>
-                            <label for="roast-selection"></label>
-                            </div>
-                    </form>
+<!--                            <label for="pick-new1">click to add</label>-->
+<!--                        <button id="pick-new1" >Add it to the list!</button>-->
+<!--                        </div>-->
+<!--                            <div>-->
+<!--                            <label for="roast-selection"></label>-->
+<!--                            </div>-->
+<!--                    </form>-->
                 </div>
         </div>
         <!--Our fancy JS stuff is working here-->
-        <div class="row">
-            <div class="col-6">
+        <div class="divList">
                 <div class="list" id="coffees">
-
                     <h3>NAME</h3>
                     <P>ROAST</P>
-
                 </div>
             </div>
         </div>
