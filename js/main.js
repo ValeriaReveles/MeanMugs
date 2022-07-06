@@ -30,7 +30,18 @@ function updateCoffees(e) {
 
     divList.innerHTML = renderCoffees(filteredCoffees);
 }
+var inputQuery = document.querySelector("#search");
 
+inputQuery.addEventListener('keyup', function(e){
+    let userInput = this.value.toLowerCase();
+    let matchingCoffees = [];
+    for (let i = 0; i < coffees.length; i ++){
+        if(coffees[i].name.toLowerCase().indexOf(userInput) !== -1){
+            matchingCoffees.push(coffees[i])
+        }
+    }
+    divList.innerHTML = renderCoffees(matchingCoffees)
+})
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
