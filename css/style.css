@@ -259,9 +259,9 @@ h1{
     -webkit-text-stroke: 1px black;
     color: white;
     letter-spacing: 2px;
-    background: #333333;
+    /*background: #333333;*/
 
-    opacity: 0.75;
+
 
 
 }
