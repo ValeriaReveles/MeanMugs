@@ -24,39 +24,42 @@
 <!--Our selection form goes here-->
 <div class="content">
     <div class="container">
-        <h2 class="text-center">PICK YOUR POISON:</h2>
+        <h2 class="text-center">PICK YOUR POISON!</h2>
+        <hr>
         <div class="row">
-            <div class="col-6">
-                <h2>ROAST LEVELS</h2>
+            <div class="text-center">
+                <h2 class="text-highlight">ROAST LEVELS</h2>
                 <form>
-                    <label for="roast-selection"></label>
+                    <label for="roast-selection">ROAST VIBES</label>
                     <select id="roast-selection">
                         <option value="all">All</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
                     </select>
-                        <label for="search" class="form-label">ROAST VIBES</label>
-                        <input type="text"  id="search" placeholder="Coffee name" required>
+                        <label for="search" class="form-label">ROAST NAME</label>
+                        <input type="text"  id="search" placeholder="Mug Name" required>
                     <button id="submit">FIND</button>
                 </form>
             </div>
+            <br>
+            <br>
 
             <!--New coffee input goes here-->
 
-            <div class="col-6 divList">
-                <h2>MAKE YOUR OWN</h2>
-                <form>
+            <div class="text-center divList">
+                <h2 class="text-highlight">MAKE YOUR OWN</h2>
+                <form></form>
                     <label for="roast-selection-new"></label>
                     <select id="roast-selection-new">
-                        <option value="all">All</option>
+                        <option value="all">Pick a Roast Level</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
                     </select>
-                    <label for="validationServer01" class="form-label">ROAST VIBES</label>
-                    <input type="text" id="validationServer01" placeholder="New Coffee name" required>
-                    <button id="submit-new">Add Creation/Abomination</button>
+                    <label for="roast-vibes-new" class="form-label">Creation Name</label>
+                    <input type="text" id="roast-vibes-new" placeholder="New Mug Name" required>
+                    <button id="submit-new">Add Mug!</button>
                 </form>
             </div>
         </div>
