@@ -44,7 +44,7 @@ function addNewCoffee(e){
     var newCoffee = {id: selectedCreatedRoast.value, name: createdName.value, roast: selectedCreatedRoast.value}
     e.preventDefault();
     if(newCoffee.name.length === 0 || newCoffee.name.replace(/\s/g,"") === "") {
-        alert('You must enter a name');
+        alert('Name Your Mug!');
     } else {
         coffeeList.push(newCoffee);
         console.log(newCoffee.name.length);
