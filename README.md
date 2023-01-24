@@ -2,7 +2,7 @@
 
 Welcome to Mean Mugs Cafe where we offer the latest and greatest selection of the darkest, strongest, and bestest roasts in town! So come on by and grab you a mean mug cup of joe to start your day. 
 
-[Site](https://valeriareveles.github.io/MeanMugs/)
+Check out our live site at: [MeanMugs](https://valeriareveles.github.io/MeanMugs/)
 
 ## About 
 
