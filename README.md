@@ -2,6 +2,8 @@
 
 Welcome to Mean Mugs Cafe where we offer the latest and greatest selection of the darkest, strongest, and bestest roasts in town! So come on by and grab you a mean mug cup of joe to start your day. 
 
+[Site](https://valeriareveles.github.io/MeanMugs/)
+
 ## About 
 
 Mean Mugs is a paired-programming web application with basic CRUD functionality. Users can select coffee based on roast-level preference as well as customize their own coffee and add it to existing selections. Main website was built using HTML using CSS and Bootstrap for styling and vanilla JS for functionality. 
