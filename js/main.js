@@ -1,18 +1,17 @@
 "use strict"
-var divList = document.querySelector('#coffees');
+var mugBody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var selectedCreatedRoast = document.getElementById('roast-selection-new');
 var newMugSubmission = document.querySelector('#submit-new');
 var createdName = document.getElementById('roast-vibes-new');
 
-
-function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
-    html += '<h3>' + coffee.name + '</h3>';
-    html += '<p>' + coffee.roast + '</p>';
-    html += '</div>';
-
+function renderCoffee(coffee){
+    var html = 
+    `<div class="mug-card flip">
+        <h4 class="mug-name">${coffee.name}</h4>
+        <h5 class="mug-roast">${coffee.roast}</h5>
+    </div>`;
     return html;
 }
 
@@ -34,7 +33,7 @@ function updateCoffeeList(e) {
         }
     });
 
-    divList.innerHTML = renderCoffeeList(filteredCoffees);
+    mugBody.innerHTML = renderCoffeeList(filteredCoffees);
 }
 
 function addNewCoffee(){
@@ -43,7 +42,7 @@ function addNewCoffee(){
     let newRoast = selectedCreatedRoast.value;
     coffeeList.push({id: newId, name: newName, roast: newRoast});
     console.log(coffeeList);
-    divList.innerHTML = renderCoffeeList(coffeeList);
+    mugBody.innerHTML = renderCoffeeList(coffeeList);
     coffeeList.sort(ascending);
 }
 
@@ -60,7 +59,7 @@ inputQuery.addEventListener('keyup', function(){
             matchingCoffees.push(coffeeList[i])
         }
     }
-    divList.innerHTML = renderCoffeeList(matchingCoffees)
+    mugBody.innerHTML = renderCoffeeList(matchingCoffees)
 })
 
 
@@ -86,7 +85,7 @@ var coffeeList = [
 
 
 
-divList.innerHTML = renderCoffeeList(coffeeList);
+mugBody.innerHTML = renderCoffeeList(coffeeList);
 
 submitButton.addEventListener('click', updateCoffeeList);
 // selectedCreatedRoast.addEventListener('change', newRoast);

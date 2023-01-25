@@ -24,7 +24,16 @@
 </header>
 <!--Our selection form goes here-->
 <div class="main content">
-    <h1 class="main">FIND YOUR MUG!</h1>
+    <div class="main-header">
+        <h1>MEAN-MUGS SPECIALTIES:</h1>
+        <br>
+        <p class="text-center">Explore our selection of speciality mugs or make your own! From our light and heavenly roast to the darkest of the dark, our mugs are specially crafted with only the meanest beans around.</p>
+        <hr>
+    </div>
+    <div class="mug-header">
+        <h1 class="text-center mug-header">FIND YOUR MUG!</h1>
+    </div>
+    <div class="mug-container" id="coffees"></div>
     <div class="container">
         <div class="row">
             <div class="form-selections col-6">
@@ -47,8 +56,8 @@
 
             <!--New coffee input goes here-->
 
-            <div class="text-center mugBody col-6">
-                <h2 class="text-highlight">MAKE YOUR OWN</h2>
+            <div class="mugBody col-6">
+                <h2>MAKE YOUR OWN</h2>
                 <form>
                     <label for="roast-selection-new"></label>
                     <select id="roast-selection-new">
@@ -66,16 +75,6 @@
     </div>
     <br>
     <br>
-   
-    <div class="search-header text-center"><h3>MEAN-MUGS SPECIALTIES:</h3> <p>Explore our selection of speciality mugs available for your delight. From our light and heavenly roast to the darkest of the dark, our mugs are specially crafted with the highest quality and attention to detail.</p></div>
-    <hr>
-    <div class="search-container">
-        <div class="mug-card" id="coffees">
-            <!--This is where the fancy JS is happening-->
-            <h3>NAME</h3>
-            <P>ROAST</P>
-        </div>
-    </div>
 </div>
 
 <script src="js/main.js"></script>
