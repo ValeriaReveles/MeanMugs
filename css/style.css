@@ -96,16 +96,6 @@ header p{
     -webkit-text-stroke: 0.094rem #640e13;
 }
 
-.main-header h1{
-    text-align: center;
-    margin: 2rem;
-    font-weight: bolder;
-    font-size: 5rem;
-    -webkit-animation: color 2s ease-in infinite;
-    animation: color 2s ease-in infinite;
-    -webkit-text-stroke: 0.068rem black;
-    opacity: 0.85;
-}
 
 
 footer {
@@ -117,8 +107,21 @@ footer {
     text-align: center;
     opacity: 0.65;
     padding: 0.625rem;
-    /* -webkit-text-stroke: 0.078rem #FFE143; */
+    -webkit-text-stroke: 0.078rem #00ECFF;
     color: white;
+}
+.main-header h1{
+    text-align: center;
+    margin: 2rem;
+    font-weight: bolder;
+    font-size: 5rem;
+    -webkit-animation: color 2s ease-in infinite;
+    animation: color 2s ease-in infinite;
+    -webkit-text-stroke: 0.068rem black;
+    opacity: 0.85;
+}
+.main-header p{
+    font-size: 1.5rem;
 }
 .mug-container{
     display: flex;
@@ -148,14 +151,13 @@ footer {
     position: relative;
     background-color: #F7F2CB;
     color: #640e13;
-    -webkit-text-stroke: 0.018rem #FFE143;
-    font-size: 2.3rem;
+    -webkit-text-stroke: 0.035rem #00ECFF;
     box-shadow: 0 0 #eb4a2c, -1px 1px #eb4a2c, -2px 2px #eb4a2c, -3px 3px #eb4a2c, -4px 4px #eb4a2c, -5px 5px #eb4a2c, -6px 6px #eb4a2c, -7px 7px #eb4a2c, -8px 8px #eb4a2c, -9px 9px #eb4a2c, -10px 10px #eb4a2c, 0px 0px #eb4a2c, -11px 11px #eb4a2c, -12px 12px #eb4a2c, -13px 13px #eb4a2c, -14px 14px #eb4a2c, -15px 15px #eb4a2c, -16px 16px #eb4a2c, -17px 17px #eb4a2c, -18px 18px #eb4a2c, -19px 19px #eb4a2c, -20px 20px #eb4a2c, 0px 0px #eb4a2c, -21px 21px #eb4a2c, -22px 22px #eb4a2c, -23px 23px #eb4a2c, -24px 24px #eb4a2c, -25px 25px #eb4a2c, -26px 26px #eb4a2c, -27px 27px #eb4a2c, -28px 28px #eb4a2c, -29px 29px #eb4a2c, -30px 30px #eb4a2c, 0px 0px #eb4a2c, -31px 31px #eb4a2c, -32px 32px #eb4a2c, -33px 33px #eb4a2c, -34px 34px #eb4a2c, -35px 35px #eb4a2c, -36px 36px #eb4a2c, -37px 37px #eb4a2c, -38px 38px #eb4a2c, -39px 39px #eb4a2c, -40px 40px #eb4a2c, 0px 0px #eb4a2c, -41px 41px #eb4a2c, -42px 42px #eb4a2c, -43px 43px #eb4a2c, -44px 44px #eb4a2c, -45px 45px #eb4a2c, -46px 46px #eb4a2c, -47px 47px #eb4a2c, -48px 48px #eb4a2c, -49px 49px #eb4a2c, -50px 50px #eb4a2c !important;
 }
 .mug-card:hover{
-    background-color: #FFE143;
-    color:#640e13;
-    -webkit-text-stroke: 0.020rem #F7F2CB;
+    background-color: #640e13;
+    color:#00ECFF;
+    /* -webkit-text-stroke: 0.035rem #00ECFF; */
 }
 
 .search-wrapper{

@@ -1,10 +1,12 @@
 "use strict"
-var mugBody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var roastSelection = document.querySelector('#roast-selection');
+var mugBody = document.getElementById('coffees');
+var submitButton = document.getElementById('submit');
+var roastSelection = document.getElementById('roast-selection');
 var selectedCreatedRoast = document.getElementById('roast-selection-new');
-var newMugSubmission = document.querySelector('#submit-new');
+var newMugSubmission = document.getElementById('submit-new');
 var createdName = document.getElementById('roast-vibes-new');
+
+console.log(roastSelection.value);
 
 function renderCoffee(coffee){
     var html = 
@@ -30,10 +32,11 @@ function updateCoffeeList(e) {
     coffeeList.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
+            mugBody.innerHTML = renderCoffeeList(filteredCoffees);
+        }else if ('all' === selectedRoast){
+            mugBody.innerHTML = renderCoffeeList(coffeeList);
         }
     });
-
-    mugBody.innerHTML = renderCoffeeList(filteredCoffees);
 }
 
 function addNewCoffee(){
@@ -104,4 +107,6 @@ function ascending (a, b) {
 
 coffeeList.sort(ascending);
 //Make your own functionality:
+
+// console.log(`Search roast: ${roastSelection.value}`);
 
