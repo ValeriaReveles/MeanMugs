@@ -6,13 +6,12 @@ var selectedCreatedRoast = document.getElementById('roast-selection-new');
 var newMugSubmission = document.getElementById('submit-new');
 var createdName = document.getElementById('roast-vibes-new');
 
-console.log(roastSelection.value);
 
 function renderCoffee(coffee){
     var html = 
-    `<div class="mug-card flip">
-        <h4 class="mug-name">${coffee.name}</h4>
-        <h5 class="mug-roast">${coffee.roast}</h5>
+    `<div class="mug-card">
+        <h4 class="mug-name mug-font">${coffee.name}</h4>
+        <h5 class="mug-roast mug-font">${coffee.roast}</h5>
     </div>`;
     return html;
 }
@@ -28,6 +27,7 @@ function renderCoffeeList(coffeeList) {
 function updateCoffeeList(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
+    console.log(`Selected roast: ${selectedRoast}`);
     var filteredCoffees = [];
     coffeeList.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
@@ -39,22 +39,20 @@ function updateCoffeeList(e) {
     });
 }
 
-function addNewCoffee(){
+function addNewCoffee(e){
+    e.preventDefault();
     let newId = coffeeList.length + 1;
     let newName = createdName.value;
     let newRoast = selectedCreatedRoast.value;
     coffeeList.push({id: newId, name: newName, roast: newRoast});
+    console.log(`Your coffee creation: \n Name: ${newName} \n Roast: ${newRoast}`);
     console.log(coffeeList);
     mugBody.innerHTML = renderCoffeeList(coffeeList);
-    coffeeList.sort(ascending);
 }
-
 
 //Search functionality
 var inputQuery = document.querySelector("#search");
-
 inputQuery.addEventListener('keyup', function(){
-
     let userInput = this.value.toLowerCase();
     let matchingCoffees = [];
     for (let i = 0; i < coffeeList.length; i ++){
@@ -84,29 +82,11 @@ var coffeeList = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+//sort coffee list by id in ascending order:
+coffeeList.sort(function(a, b){return a.id - b.id});
 
-
-
-
+//need to define functions first, that's why these are not up with variables.
 mugBody.innerHTML = renderCoffeeList(coffeeList);
-
 submitButton.addEventListener('click', updateCoffeeList);
-// selectedCreatedRoast.addEventListener('change', newRoast);
 newMugSubmission.addEventListener('click', addNewCoffee);
-
-//Sort Coffee list in ascending order:
-function ascending (a, b) {
-    if (a.name > b.name){
-        return -1;
-    }
-    if (a.name < b.name){
-        return 1;
-    }
-    return 0;
-}
-
-coffeeList.sort(ascending);
-//Make your own functionality:
-
-// console.log(`Search roast: ${roastSelection.value}`);
 

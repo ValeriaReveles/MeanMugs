@@ -22,7 +22,6 @@
         <h2>SCROLL DOWN FOR MORE</h2>
     </footer>
 </header>
-<!--Our selection form goes here-->
 <div class="main content">
     <div class="main-header">
         <h1>MEAN-MUGS SPECIALTIES:</h1>
@@ -34,47 +33,57 @@
         <h1 class="text-center mug-header">FIND YOUR MUG!</h1>
     </div>
     <div class="mug-container" id="coffees"></div>
+    <br>
+    <br>
+    <div class="divider">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">-- OR --</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="form-selections col-6">
-                <h2 class="text-highlight">Search Our Mugs</h2>
+                <h1 class="text-highlight mug-header">SEARCH OUR MUGS:</h1>
                 <form>
-                    <label for="roast-selection">ROAST LEVEL</label>
+                    <label for="roast-selection">BY ROAST</label>
                     <select id="roast-selection">
                         <option value="all">All</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
                     </select>
-                        <label for="search" class="form-label">MUG NAME</label>
-                        <input type="text"  id="search" placeholder="Search by Name" required>
+                    <br>
+                    <p> - OR - </p>
+                    <label for="search" class="form-label">BY MUG</label>
+                    <input type="text"  id="search" placeholder="Search by Name" required>
+                    <br>
                     <button id="submit">FIND</button>
                 </form>
             </div>
-            <br>
-            <br>
-
-            <!--New coffee input goes here-->
-
             <div class="mugBody col-6">
-                <h2>MAKE YOUR OWN</h2>
+                <h1 class="text-highlight mug-header">MAKE YOUR OWN!</h1>
                 <form>
-                    <label for="roast-selection-new"></label>
+                    <label for="roast-selection-new">STEP 1: PICK ROAST</label>
                     <select id="roast-selection-new">
                         <option value="all">Pick a Roast Level</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
                     </select>
-                    <label for="roast-vibes-new" class="form-label">Creation Name</label>
-                    <input type="text" id="roast-vibes-new" placeholder="New Mug Name" required>
+                    <br>
+                    <br>
+                    <label for="roast-vibes-new" class="form-label">STEP 2: ADD MUG</label>
+                    <input type="text" id="roast-vibes-new" placeholder="NAME YOUR MUG!" required>
+                    <br>
                     <button id="submit-new">Add Mug!</button>
                 </form>
             </div>
         </div>
     </div>
-    <br>
-    <br>
 </div>
 
 <script src="js/main.js"></script>
