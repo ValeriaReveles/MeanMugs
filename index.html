@@ -45,11 +45,11 @@
     <div class="container">
         <div class="row">
             <div class="form-selections col-lg-6">
-                <h1 class="mug-header text-highlight">SEARCH MUGS:</h1>
+                <h1 class="text-highlight mug-header" id="coffee-form">SEARCH MUGS:</h1>
                 <form>
                     <label for="roast-selection">BY ROAST</label>
                     <select id="roast-selection">
-                        <option value="all">All</option>
+                        <option value="all">ALL</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
@@ -57,17 +57,19 @@
                     <br>
                     <p class="text-center"> - OR - </p>
                     <label for="search" class="form-label">BY MUG</label>
-                    <input type="text"  id="search" placeholder="Search by Name" required>
+                    <input type="text"  id="search" placeholder="SEARCH BY NAME" required>
                     <br>
-                    <button id="submit">FIND</button>
+                    <div class="button-search">
+                        <button id="submit">FIND</button>
+                    </div>
                 </form>
             </div>
             <div class="mug-body col-lg-6">
-                <h1 class="mug-header text-highlight">MAKE YOUR OWN!</h1>
+                <h1 class="text-highlight mug-header" id="coffee-form">MAKE YOUR OWN!</h1>
                 <form>
                     <label for="roast-selection-new">STEP 1: PICK ROAST</label>
                     <select id="roast-selection-new">
-                        <option value="all">Pick a Roast Level</option>
+                        <option value="all">CHOOSE A ROAST</option>
                         <option value="light">Light and Heavenly</option>
                         <option value="medium">Medium and Plain</option>
                         <option value="dark">Dark and Crispy</option>
@@ -77,7 +79,9 @@
                     <label for="roast-vibes-new" class="form-label">STEP 2: ADD MUG</label>
                     <input type="text" id="roast-vibes-new" placeholder="NAME YOUR MUG!" required>
                     <br>
-                    <button id="submit-new">Add Mug!</button>
+                    <div class="button-add">
+                        <button id="submit-new">ADD MUG!</button>
+                    </div>
                 </form>
             </div>
         </div>
