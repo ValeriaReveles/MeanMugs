@@ -15,26 +15,26 @@
     <div class="landing-heading">
         <h1>MEAN-MUGS CAFE</h1>
     </div>
-    <div class="-landing-slogan">
-        <p>BEST ROASTS IN THE CITY</p>
-    </div>
+    <p>BEST ROASTS IN THE CITY</p>
     <footer class="landing-footer">
         <h2>SCROLL DOWN FOR MORE</h2>
     </footer>
 </header>
 <div class="main content">
     <div class="main-header">
-        <h1>MEAN-MUGS SPECIALTIES:</h1>
-        <br>
-        <p class="text-center">Explore our selection of speciality mugs or make your own! From our light and heavenly roast to the darkest of the dark, our mugs are specially crafted with only the meanest beans around.</p>
+        <div class="row">
+            <div class="col-12">
+                <h1>MEAN-MUGS SPECIALTIES:</h1>
+                <br>
+                <p class="text-center">Explore our selection of speciality mugs or make your own! From our light and heavenly roast to the darkest of the dark, our mugs are specially crafted with only the meanest beans around.</p>
+            </div>
+        </div>
         <hr>
     </div>
     <div class="mug-header">
         <h1 class="text-center mug-header">FIND YOUR MUG!</h1>
     </div>
     <div class="mug-container" id="coffees"></div>
-    <br>
-    <br>
     <div class="divider">
         <div class="row">
             <div class="col-12">
@@ -42,12 +42,10 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
     <div class="container">
         <div class="row">
-            <div class="form-selections col-6">
-                <h1 class="text-highlight mug-header">SEARCH OUR MUGS:</h1>
+            <div class="form-selections col-lg-6">
+                <h1 class="mug-header text-highlight">SEARCH MUGS:</h1>
                 <form>
                     <label for="roast-selection">BY ROAST</label>
                     <select id="roast-selection">
@@ -57,15 +55,15 @@
                         <option value="dark">Dark and Crispy</option>
                     </select>
                     <br>
-                    <p> - OR - </p>
+                    <p class="text-center"> - OR - </p>
                     <label for="search" class="form-label">BY MUG</label>
                     <input type="text"  id="search" placeholder="Search by Name" required>
                     <br>
                     <button id="submit">FIND</button>
                 </form>
             </div>
-            <div class="mugBody col-6">
-                <h1 class="text-highlight mug-header">MAKE YOUR OWN!</h1>
+            <div class="mug-body col-lg-6">
+                <h1 class="mug-header text-highlight">MAKE YOUR OWN!</h1>
                 <form>
                     <label for="roast-selection-new">STEP 1: PICK ROAST</label>
                     <select id="roast-selection-new">
