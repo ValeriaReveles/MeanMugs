@@ -1,4 +1,4 @@
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 992px) { */
     
 *{
     margin: 0;
@@ -268,18 +268,18 @@ input{
     padding: .5rem;
 }
 
-#submit{
-    margin-left: 5rem;
+/* #submit{
+    margin: 1rem;
     font-size: 1rem;
     padding: .5rem;
-}
+} */
 
 button {
   border: 0.078rem red solid;
   border-radius: 0.8rem;
-  font-size: .8rem; 
-  margin:0.3rem;
-  padding: 0.4rem;
+  font-size: .9rem; 
+  margin:0.5rem;
+  padding: 0.5rem;
   color: #640e13;
   -webkit-text-stroke: 0.030rem #640e13;
   text-shadow: 0 0 red , -1px 1px #FFD362, -2px 2px #FFD362, -3px 3px #00ECFF;
@@ -302,16 +302,16 @@ button:hover{
   text-shadow: 0 0 #FFE143, -1px 1px #640e13, -2px 2px red;
 }
 
-.button-search{
+/* .button-search{
     margin: 0;
     position:relative;
-    margin: 0.3rem 0 0rem 6rem;
+    /* margin: 0.3rem 1rem 0 0; */
     
-}
+/* }
 
 .button-add{
-    margin: 0.3rem 0 0 9rem;
-}
+    /* margin: 0.3rem 0 0 4rem; */
+/* } */ 
 
 .search-header h3{
     font-size: 4rem;
@@ -319,7 +319,7 @@ button:hover{
     color:#640e13;
     -webkit-text-stroke: 0.018rem #FFD362;
 }
-}
+/* } */
 
 /* Web Responsiveness: Small Screen */
 @media only screen and (min-width: 350px) and (max-width: 500px){
@@ -409,7 +409,7 @@ button:hover{
     }
     .button-add{
         position: relative;
-        margin: 0.3rem 0 0 4rem;
+        margin: 0.3rem 0 0 1rem;
     }
  
     .divider h1{
@@ -436,96 +436,6 @@ button:hover{
     form{
         width:15.5rem;
         margin:1.5rem 0 0 1.5rem;
-    }
-    form p{
-        margin: .5rem;
-    
-    }
-
-    .form-label{
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 991px){
-    .button-search{
-        position:relative;
-        margin: 0.4rem 0 0 0;
-    }
-    .button-add{
-        position: relative;
-        margin: 0.3rem 0 0 4rem;
-    }
- 
-    .divider h1{
-        font-size: 4rem;
-        margin: 3rem 0 3rem 0; 
-    }
-    .form-selections, .mug-body{
-        display: flex;
-        flex-direction: column;
-        /* margin: 1rem; */
-    }
-    .form-selections{
-        margin-bottom: 5rem;
-        font-size: bigger;
-    }
-    #roast-new{
-        margin: .4rem;
-    }
-  
-    #search{
-        margin-left: .9rem;
-    }
-    
-    form{
-        width:15.5rem;
-        margin:1.5rem 0 0 1.5rem;
-    }
-    form p{
-        margin: .5rem;
-    
-    }
-
-    .form-label{
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1399px){
-    .button-search{
-        position:relative;
-        margin: 0.3rem 0 0.2rem 0;
-    }
-    .button-add{
-        position: relative;
-        margin: 0.3rem 0 0 4rem;
-    }
- 
-    .divider h1{
-        font-size: 4rem;
-        margin: 3rem 0 3rem 0; 
-    }
-    .form-selections, .mug-body{
-        display: flex;
-        flex-direction: column;
-        /* margin: 1rem; */
-    }
-    .form-selections{
-        margin-bottom: 5rem;
-        font-size: bigger;
-    }
-    #roast-new{
-        margin: .4rem;
-    }
-  
-    #search{
-        margin-left: .9rem;
-    }
-    
-    form{
-        width:15.5rem;
-        margin:1.5rem 0 0 7rem;
     }
     form p{
         margin: .5rem;
