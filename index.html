@@ -45,9 +45,9 @@
     <div class="container">
         <div class="row">
             <div class="form-selections col-lg-6">
-                <h1 class="text-highlight mug-header" id="coffee-form">SEARCH MUGS:</h1>
+                <h1 class="text-highlight mug-header">SEARCH MUGS:</h1>
                 <form>
-                    <label for="roast-selection">BY ROAST</label>
+                    <label for="roast-selection" class="form-label">BY ROAST</label>
                     <select id="roast-selection">
                         <option value="all">ALL</option>
                         <option value="light">Light and Heavenly</option>
@@ -55,7 +55,7 @@
                         <option value="dark">Dark and Crispy</option>
                     </select>
                     <br>
-                    <p class="text-center"> - OR - </p>
+                    <p class="text-center" id="or-form"> - OR - </p>
                     <label for="search" class="form-label">BY MUG</label>
                     <input type="text"  id="search" placeholder="SEARCH BY NAME" required>
                     <br>
@@ -67,7 +67,7 @@
             <div class="mug-body col-lg-6">
                 <h1 class="text-highlight mug-header" id="coffee-form">MAKE YOUR OWN!</h1>
                 <form>
-                    <label for="roast-selection-new">STEP 1: PICK ROAST</label>
+                    <label for="roast-selection-new" class="add-label">STEP 1: PICK ROAST</label>
                     <select id="roast-selection-new">
                         <option value="all">CHOOSE A ROAST</option>
                         <option value="light">Light and Heavenly</option>
@@ -76,8 +76,8 @@
                     </select>
                     <br>
                     <br>
-                    <label for="roast-vibes-new" class="form-label">STEP 2: ADD MUG</label>
-                    <input type="text" id="roast-vibes-new" placeholder="NAME YOUR MUG!" required>
+                    <label for="roast-new" class="add-label" id="add-mug">STEP 2: ADD MUG</label>
+                    <input type="text" id="roast-new" placeholder="NAME YOUR MUG!" required>
                     <br>
                     <div class="button-add">
                         <button id="submit-new">ADD MUG!</button>

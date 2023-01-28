@@ -4,7 +4,7 @@ var submitButton = document.getElementById('submit');
 var roastSelection = document.getElementById('roast-selection');
 var selectedCreatedRoast = document.getElementById('roast-selection-new');
 var newMugSubmission = document.getElementById('submit-new');
-var createdName = document.getElementById('roast-vibes-new');
+var createdName = document.getElementById('roast-new');
 
 
 function renderCoffee(coffee){

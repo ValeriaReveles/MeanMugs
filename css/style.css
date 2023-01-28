@@ -1,4 +1,5 @@
-/* Web Responsiveness: Desktop view  */
+@media screen and (min-width: 1400px) {
+    
 *{
     margin: 0;
     padding: 0;
@@ -212,10 +213,29 @@ form{
     text-shadow: 0 0 red, -1px 1px #FFD362, -2px 2px red, -3px 3px #FFD362, -4px 4px #00ECFF;
     /* -webkit-text-stroke: 0.028rem #00ECFF; */
     margin: 4.5rem;
-    padding:.5rem;
+    padding:1.5rem;
     border: 0.2rem #F7F2CB solid;
     border-radius: 0.8rem;
     box-shadow: 0 0 red, -1px 1px #F7F2CB, -2px 2px red, -3px 3px red, -4px 4px red, -5px 5px #00ECFF, -6px 6px #640e13, -7px 7px red;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    margin: .3rem;
+}
+
+.add-label{
+    margin-right: .5rem;
+}
+
+#or-form{
+    font-size: 1.8rem;
+}
+
+#coffee-form{
+    font-size: 4.5rem;
+    margin-top: 2.5rem;
+    padding: 0
 }
 
 select{
@@ -230,15 +250,28 @@ select{
 
 input{
     border-radius: 0.8rem;
-    font-size: 0.87rem;
+    font-size: 0.9rem;
     background-color: #F7F2CB;
     border: 0.078rem #640e13 solid;
-    padding: 0.2rem;
+    padding: .3rem;
+    margin: .2rem;
+
     box-shadow: 0 0 #eb4a2c, -1px 1px #eb4a2c, -2px 2px #eb4a2c, -3px 3px #00ECFF, -4px 4px #640e13!important;
 }
 
 ::placeholder{
     color: #640e13;
+}
+
+#search{
+    margin-left: .8rem;
+    padding: .5rem;
+}
+
+#submit{
+    margin-left: 5rem;
+    font-size: 1rem;
+    padding: .5rem;
 }
 
 button {
@@ -273,6 +306,11 @@ button:hover{
     margin: 0;
     position:relative;
     margin: 0.3rem 0 0rem 6rem;
+    
+}
+
+.button-add{
+    margin: 0.3rem 0 0 9rem;
 }
 
 .search-header h3{
@@ -281,9 +319,9 @@ button:hover{
     color:#640e13;
     -webkit-text-stroke: 0.018rem #FFD362;
 }
+}
 
 /* Web Responsiveness: Small Screen */
-
 @media only screen and (min-width: 350px) and (max-width: 500px){
     header{
         max-width: 100%;
@@ -341,9 +379,6 @@ button:hover{
         text-shadow: 0 0 #00ECFF, -1px 1px #640e13, -2px 2px #640e13, -3px 3px #640e13, -4px 4px #640e13, -5px 5px #640e13, -6px 6px #640e13, -7px 7px #640e13, -8px 8px #640e13, -9px 9px #640e13, -10px 10px #640e13, 0px 0px #eb4a2c, -11px 11px #eb4a2c, -12px 12px #eb4a2c, -13px 13px #eb4a2c, -14px 14px #eb4a2c, -15px 15px #eb4a2c, -16px 16px #eb4a2c, -17px 17px #eb4a2c, -18px 18px #eb4a2c, -19px 19px #00ECFF, -20px 20px #640e13, -21px 21px #640e13;
     }
 
-    #make-coffee h1{
-        font-size: 1rem;
-    }
     .mug-card{
         border: 0.3rem #FFD362 solid;
         width: 12.5rem;
@@ -370,11 +405,11 @@ button:hover{
 
     .button-search{
         position:relative;
-        margin: 0.3rem 0 0 5rem;
+        margin: 0.4rem 0 0 0;
     }
     .button-add{
         position: relative;
-        margin: 0.3rem 0 0 4.5rem;
+        margin: 0.3rem 0 0 4rem;
     }
  
     .divider h1{
@@ -390,19 +425,114 @@ button:hover{
         margin-bottom: 5rem;
         font-size: bigger;
     }
-    input{
-        margin: 0.3rem;
+    #roast-new{
+        margin: .4rem;
+    }
+  
+    #search{
+        margin-left: .9rem;
     }
     
     form{
         width:15.5rem;
         margin:1.5rem 0 0 1.5rem;
     }
+    form p{
+        margin: .5rem;
+    
+    }
 
     .form-label{
         margin: 0;
     }
-
-
 }
 
+@media only screen and (min-width: 501px) and (max-width: 991px){
+    .button-search{
+        position:relative;
+        margin: 0.4rem 0 0 0;
+    }
+    .button-add{
+        position: relative;
+        margin: 0.3rem 0 0 4rem;
+    }
+ 
+    .divider h1{
+        font-size: 4rem;
+        margin: 3rem 0 3rem 0; 
+    }
+    .form-selections, .mug-body{
+        display: flex;
+        flex-direction: column;
+        /* margin: 1rem; */
+    }
+    .form-selections{
+        margin-bottom: 5rem;
+        font-size: bigger;
+    }
+    #roast-new{
+        margin: .4rem;
+    }
+  
+    #search{
+        margin-left: .9rem;
+    }
+    
+    form{
+        width:15.5rem;
+        margin:1.5rem 0 0 1.5rem;
+    }
+    form p{
+        margin: .5rem;
+    
+    }
+
+    .form-label{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px){
+    .button-search{
+        position:relative;
+        margin: 0.3rem 0 0.2rem 0;
+    }
+    .button-add{
+        position: relative;
+        margin: 0.3rem 0 0 4rem;
+    }
+ 
+    .divider h1{
+        font-size: 4rem;
+        margin: 3rem 0 3rem 0; 
+    }
+    .form-selections, .mug-body{
+        display: flex;
+        flex-direction: column;
+        /* margin: 1rem; */
+    }
+    .form-selections{
+        margin-bottom: 5rem;
+        font-size: bigger;
+    }
+    #roast-new{
+        margin: .4rem;
+    }
+  
+    #search{
+        margin-left: .9rem;
+    }
+    
+    form{
+        width:15.5rem;
+        margin:1.5rem 0 0 7rem;
+    }
+    form p{
+        margin: .5rem;
+    
+    }
+
+    .form-label{
+        margin: 0;
+    }
+}
