@@ -6,7 +6,7 @@ Check out our live site at: [MeanMugs](https://valeriareveles.github.io/MeanMugs
 
 ## About 
 
-Mean Mugs is a paired-programming web application with basic CRUD functionality. Users can select coffee based on roast-level preference as well as customize their own coffee and add it to existing selections. Main website was built using HTML using CSS and Bootstrap for styling and vanilla JS for functionality. 
+Mean Mugs is an interactive web application with basic CRUD functionality. Users can select coffee based on roast-level preference as well as customize their own coffee and add it to existing selections. Main website was built using HTML using CSS and Bootstrap for styling and vanilla JS for functionality. 
 
 ## USER Features
 
